@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body class="bg-gray-100">
+    <%- include('partials/navbar', { page: '/' }) %>
+
+    <div class="container mx-auto my-6">
+        <div class="hero bg-base-200 p-6 rounded-lg custom-class">
+            <h1 class="text-3xl font-bold">Welcome to the Lego Collection</h1>
+            <p class="mt-4">Explore our extensive collection of Lego sets.</p>
+            <a href="/lego/sets" class="btn btn-primary mt-4">View Collection</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="card bg-base-100 shadow-md">
+                <figure>
+                    <img src="../lego1.png" alt="Lego Set 1">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Lego Set 1</h2>
+                    <p>A brief description of Lego Set 1.</p>
+                    <a href="/lego/sets/set_num_1" class="btn btn-secondary">Details</a>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-md">
+                <figure>
+                    <img src="../lego2.png" alt="Lego Set 2">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Lego Set 2</h2>
+                    <p>A brief description of Lego Set 2.</p>
+                    <a href="/lego/sets/set_num_2" class="btn btn-secondary">Details</a>
+                </div>
+            </div>
+            <div class="card bg-base-100 shadow-md">
+                <figure>
+                    <img src="../lego3.jpg" alt="Lego Set 3">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Lego Set 3</h2>
+                    <p>A brief description of Lego Set 3.</p>
+                    <a href="/lego/sets/set_num_3" class="btn btn-secondary">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

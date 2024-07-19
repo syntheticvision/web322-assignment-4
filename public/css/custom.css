@@ -1,0 +1,32 @@
+.hero {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin: 1rem;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    margin: 1.5rem;
+}
+
+.hero .btn-primary {
+    background-color: #3182ce;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero .btn-primary:hover {
+    background-color: #2b6cb0;
+}

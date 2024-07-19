@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body class="bg-gray-100">
+    <%- include('partials/navbar', { page: '/about' }) %>
+
+    <section class="hero min-h-screen bg-gray-200 flex items-center justify-center">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">About</h2>
+            <p class="text-lg text-gray-700 mb-8">Web 322 Assignment</p>
+        </div>
+    </section>
+
+    <div class="container mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex justify-center">
+            <img src="./lego.jpg" alt="About Image" class="rounded-lg shadow-lg">
+        </div>
+        <div>
+            <p>Hi, this is Babak. I study Computer Programming at Seneca College</p>
+        </div>
+    </div>
+
+    <footer class="bg-blue-500 text-white text-center py-4">
+        <p>&copy; 2024 Lego Collection. All rights reserved.</p>
