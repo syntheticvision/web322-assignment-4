@@ -1,22 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Custom styles */
-.custom-class {
-  background-color: #ff6347;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-/* Example of custom utility */
-@layer utilities {
-  .bg-custom {
-    background-color: #ff6347;
-  }
-  .text-custom {
-    color: #ff6347;
-  }
-}
-
-@import 'custom.css';

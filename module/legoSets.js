@@ -36,18 +36,15 @@ function getAllSets() {
 
 function getSetByNum(setNum) {
     return new Promise((resolve, reject) => {
-        try {
-            const set = sets.find(set => set.set_num === setNum);
-            if (set) {
-                resolve(set);
-            } else {
-                reject(`Unable to find set with set_num: ${setNum}`);
-            }
-        } catch (error) {
-            reject(error);
+        const set = sets.find((s) => s.set_num === setNum);
+        if (set) {
+            resolve(set);
+        } else {
+            reject(new Error(`Set with set_num ${setNum} not found`));
         }
     });
 }
+
 
 function getSetsByTheme(theme) {
     return new Promise((resolve, reject) => {
